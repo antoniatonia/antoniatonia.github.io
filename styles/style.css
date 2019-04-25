@@ -1,0 +1,39 @@
+/* start body */
+body {
+    color: black;
+    font-family: Helvetica, Arial,sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+/* End body */
+
+/* start debug */
+.bg-blue {
+    background-color: white;
+}
+
+.bg-red {
+    background-color: peachpuff;
+}
+/* End debug */
+
+/* start contaiter */
+.container {
+    margin: 10px auto;
+    overflow: auto;
+    width: 90%;
+}
+/* End container */
+.container-full {
+    margin: 10px auto;
+    overflow: auto;
+    width: 90%;
+}
+
+/* start logo */
+.logo {
+    text-align: center;
+}
+/* End logo */
