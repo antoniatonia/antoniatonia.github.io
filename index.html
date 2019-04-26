@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- start title -->
     <title>MUA-OFFICIAL</title>
+    <link rel="stylesheet" href="styles/style.css">
     <meta type="description" content="halaman ini adalah hey makeup shop">
     <!-- And title -->
 
@@ -14,108 +15,28 @@
     <!-- End description -->
 
 </head>
-<body>
+<body >
     <!-- Start Logo -->
-    <a href="index.html" title="MUA-OFFICIAL">
-        <img src="images/MUA-OFFICIAL.jpg" alt="logo coding design" width="300">
-    </a>
+    <div class="logo">
+        <div class="container bg-blue">
+            <a href="index.html" title="MUA-OFFICIAL">
+                <img src="images/MUA-OFFICIAL.jpg" alt="logo coding design" width="300">
+            </a>
+        </div>
+    </div>
     <!-- End Logo-->
 
     <!-- start menu Primer -->
-    <ul>
-        <li>
-            <a href="index.html" title="Beranda">Beranda</a>
-        </li>
-        <li>
-            <a href="foto.html" title="Foto">Foto</a>
-        </li>
-        <li>
-            <a href="layanan.html" title="Pekerjaan">Pekerjaan</a>
-        </li>
-        <li>
-            <a href="pertanyaan.html" title="Pertanyaan">Pertanyaan</a>
-        </li>
-        <li>
-            <a href="artikel.html" title="Artikel">Artikel</a>
-        </li>
-        <li>
-            <a href="testimoni.html" title="Testimoni">Testimoni</a>
-        </li>
-        <li>
-            <a href="kontak.html" title="kontak kami">kontak kami</a>
-        </li>
-    </ul>
-    <!-- End Menu Primer -->
-
-    <!-- start jumbotrom -->
-    <h1>Selamat datang di MUA-OFFICIAL</h1>
-    <h3>MUA-OFFICIAL menyediakan tutorial yang efesian dan keren untuk berbagai usia</h3>
-    <!-- End jumbotrom -->
-
-    <!-- promo-->
-    <h4>Promo</h4>
-    <ul>
-        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-    </ul>
-    <!-- End promo -->
-
-     <!-- start layanan-->
-     <h4>Layanan</h4>
+    <div class="container menu-primer">
         <ul>
             <li>
-                <a href="layanan.html" title=""> makeup strong</a>
-            </li>
-            <li>
-                <a href="layanan.html" title="">makeup flawless</a>
-            </li>
-            <li>
-                    <a href="layanan.html" title="">makeup summer</a>
-            </li>
-            <li>
-                    <a href="layanan.html" title="">makeup koreanstyle</a>
-            </li>
-        </ul>
-     <!-- End layanan -->
-
-    <!-- start artikel -->
-    <h4>Artikel</h4>
-    <ul>
-        <li>
-            <a href="artikel.html" title="">Hal yang harus diketahui perempuan</a>
-
-        </li>
-        <li>
-            <a href="artikel.html" title="tips dan triks">jenis makeup yang mudah dan tidak bikin ribet</a>
-        </li>
-    </ul>
-        
-    <!-- End artikel -->
-
-    <!-- start testimonial -->
-    <h4>testimonial</h4>
-    <blockquote>
-        <p>
-            <em>"Indri" semenjak aku sering melihat tutorialnya di MUA-OFFICIAL aku jadi jago mengaplikasikan makeup di wajah aku dengan PD</em>
-        </p>
-    </blockquote>
-    <!-- End testimonial -->
-    <!-- start Menu Sekunder-->
-    <h4> MUA-OFFICIAL</h4>
-    <p>MUA-OFFICIAL menyediakan tutorial yang efesian dan keren untuk berbagai usia</p>   
-    <p>Email   : <a href="mailto:antonia270901@gmail" title="admin@mua-official.com">antonia270901@gmail.com</a></p> 
-    <p>WA : <a href="tel:+62-896-0386-0438" title="tel:+62-896-0386-0438">+62-896-0386-0438</a></p>
-
-    <h4>Menu</h4>
-    <ul>
-            <li>
-                <a href="index.html" title="Beranda">Beranda</a>
+                <a href="index.html" title="Beranda" class="active">Beranda</a>
             </li>
             <li>
                 <a href="foto.html" title="Foto">Foto</a>
             </li>
             <li>
-                <a href="layanan.html" title="layanan">Pekerjaan</a>
+                <a href="layanan.html" title="Pekerjaan">layanan</a>
             </li>
             <li>
                 <a href="pertanyaan.html" title="Pertanyaan">Pertanyaan</a>
@@ -130,23 +51,158 @@
                 <a href="kontak.html" title="kontak kami">kontak kami</a>
             </li>
         </ul>
+    </div>
+    <!-- End Menu Primer -->
 
+    <!-- start jumbotrom -->
+    <div class="container jumbotron">
+        <h1>Selamat datang di MUA-OFFICIAL</h1>
+        <h3>MUA-OFFICIAL menyediakan tutorial yang efesian dan keren untuk berbagai usia</h3>
+    </div>
+    <!-- End jumbotrom -->
+
+    <!-- start promo & layanan -->
+    <div class="container">
+        <!-- start promo -->
+        <div class="main-home-one">
+            <div class="box-heading">
+                <h4>Promo</h4>
+            </div>
+            <div class="box-isi">
+                <ul>
+                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                </ul>
+            </div>
+        </div>
+         
+       
+        <!-- End promo -->
+
+        <!-- start layanan -->
+        <div class="main-home-two">
+            <div class="box-heading">
+                <h4>Layanan</h4>
+            </div>
+            <div class="box-isi">
+                <ul>
+                    <li>
+                        <a href="layanan.html" title=""> makeup strong</a>
+                    </li>
+                    <li>
+                        <a href="layanan.html" title="">makeup flawless</a>
+                    </li>
+                    <li>
+                        <a href="layanan.html" title="">makeup summer</a>
+                    </li>
+                    <li>
+                        <a href="layanan.html" title="">makeup koreanstyle</a>
+                    </li>
+                </ul>
+                </div>
+        </div>
+        <!-- Ebd layanan -->
+    </div>
+     <!-- End promo & layanan -->
+
+     <!-- start artikel & testimoni -->
+     
+     <div class="container">
+        <!-- start artikel -->
+        <div class="main-home-one">
+            <div class="box-heading">
+                <h4>Artikel</h4>
+            </div>
+            <div class="box-isi">
+                <ul>
+                    <li>
+                        <a href="artikel.html" title="">Hal yang harus diketahui perempuan</a>
+
+                    </li>
+                    <li>
+                        <a href="artikel.html" title="tips dan triks">jenis makeup yang mudah dan tidak bikin ribet</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- End artikel -->
+
+        <!-- start testimonial -->
+        <div class="main-home-two">
+            <div class="box-heading">
+                <h4>testimonial</h4>
+            </div>
+            <div class="box-isi">
+            <blockquote>
+                <p>
+                    <em>"Indri" semenjak aku sering melihat tutorialnya di MUA-OFFICIAL aku jadi jago mengaplikasikan makeup di wajah aku dengan PD</em>
+                </p>
+            </blockquote>
+            </div>
+        </div>
+        <!-- End testimonial -->
+    </div>
+    <!-- End artikel & testimoni -->    
+
+    
+    <!-- start Menu Sekunder-->
+    
+        <div class="container-full bg-blue">
+            <div class="container bg-red">
+                <h4> MUA-OFFICIAL</h4>
+                <p>MUA-OFFICIAL menyediakan tutorial yang efesian dan keren untuk berbagai usia</p>   
+                <p>Email   : <a href="mailto:antonia270901@gmail" title="admin@mua-official.com">antonia270901@gmail.com</a></p> 
+                <p>WA : <a href="tel:+62-896-0386-0438" title="tel:+62-896-0386-0438">+62-896-0386-0438</a></p>
+
+                <h4>Menu</h4>
+                <ul>
+                        <li>
+                            <a href="index.html" title="Beranda">Beranda</a>
+                        </li>
+                        <li>
+                            <a href="foto.html" title="Foto">Foto</a>
+                        </li>
+                        <li>
+                            <a href="layanan.html" title="layanan">Pekerjaan</a>
+                        </li>
+                        <li>
+                            <a href="pertanyaan.html" title="Pertanyaan">Pertanyaan</a>
+                        </li>
+                        <li>
+                            <a href="artikel.html" title="Artikel">Artikel</a>
+                        </li>
+                        <li>
+                            <a href="testimoni.html" title="Testimoni">Testimoni</a>
+                        </li>
+                        <li>
+                            <a href="kontak.html" title="kontak kami">kontak kami</a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    
+
+   
+    
     <h4>Media Sosial</h4>
     <ul>
         <li><a href="https://facebook.com/" title="Facebook - MUA-OFFICIAL">
-                <img src="images/facebook.png" width="90"alt="logo Facebook">
-            </a></li>
+                <img src="images/pacebook.png" width="90"alt="logo Facebook">facebook</a>
+        </li>
         <li><a href="https://instagram.com/" title="Instagram - MUA-OFFICIAL">
-                <img src="#" alt="logo Instagram">
-        </a></li>
+                <img src="images/instagram.png" width="90" alt="logo Instagram">instagram</a>
+        </li>
         <li><a href="https://twitter.com/" title="Twitter - MUA-OFFICIAL">
-                <img src="#" alt="logo Twitter">
+                <img src="images/twitter.png" width="90" alt="logo Twitter">
         </a></li>
     </ul>
+    
     <!-- End Menu Sekunder-->
 
     <!-- start copy right -->
+    <div class="container">
     <p>copyright &copy; 2019 - MUA-OFFICIAL</p>
+    </div>
     <!-- End copy right -->
 
     
