@@ -1,7 +1,11 @@
+/* start font */
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+/* End font */
+
 /* start body */
 body {
     color: black;
-    font-family: Helvetica, Arial,sans-serif;
+    font-family: Raleway, Helvetica, Arial,sans-serif;
     font-size: 16px;
     line-height: 1.5em;
     margin: 0;
@@ -15,7 +19,7 @@ body {
 }
 
 .bg-red {
-    background-color: peachpuff;
+    background-color: wheat;
 }
 /* End debug */
 
@@ -37,3 +41,137 @@ body {
     text-align: center;
 }
 /* End logo */
+
+/* start Anchor / hyperlink */
+a:link,
+a:visited {
+    color: blue;
+    text-decoration: none;
+}
+a:hover,
+a:active {
+    color: black;
+    text-decoration: underline;
+}
+/* End Anchor / hyperlink */
+
+/* start Menu primer */
+.menu-primer ul {
+    background-color: rosybrown;;
+    border-radius: 4px;
+    box-shadow: 
+    0 30px 5px -1px rgba(0, 0, 0, .2),
+    0 6px 10px 0px rgba(0, 0, 0, .14),
+    0 1px 18px 0px rgba(0, 0, 0, .12);  
+}
+
+.menu-primer li {
+    border-right: 1px solid #d1d5da;
+    display: inline-block;
+     
+}
+
+.menu-primer a {
+    color: #ffffff;
+    font-size: 13px;
+    padding: 10px 20px;
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+    display: inline-block;
+    margin: 0 -4px;
+}
+
+.menu-primer a:hover {
+    background-color: antiquewhite;
+    color: #333333;
+    text-decoration: none;
+}
+
+.menu-primer .active {
+    background-color: blanchedalmond;
+    color: #333333;
+    text-decoration: none;
+}
+/* End Menu primer */
+
+/* start Heading */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    letter-spacing: 100;
+
+}
+h1 {
+    font-size: 28px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+    
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+/* End Heading */
+
+/* start jumbobron */
+.jumbotron {
+    background-color: rosybrown;
+    border: 1px solid brown;
+    border-radius: 4px;
+    padding: 20px 0; 
+}
+.jumbotron h1 {
+    font-size: 32px;
+    padding: 0 20px;
+}
+.jumbotron h3 {
+    font-size: 20px;
+    padding: 0 20px;
+}
+/* End jumbotron */
+
+/* start main */
+.main-home-one {
+    float: left;
+    width: 49.5%;
+}
+.main-home-two {
+    float: right;
+    width: 49.5%;
+}
+.main-home-one .box-isi,
+.main-home-two .box-isi {
+    height: 140px;
+}
+
+/* End Main */
+
+/* start box */
+.box-heading {
+    background-color: papayawhip; 
+    border: 1px solid #d1d5da;
+    border-radius: 3px 3px 0 0;
+    margin: 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+.box-heading h4 {
+
+}
+.box-isi {
+    background-color: ivory;
+    border: 1px solid #d1d5da;
+    border-top: 0;
+    margin: 0;
+    padding: 10px 20px;
+    
+}
+/* End box */
