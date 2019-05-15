@@ -1,6 +1,7 @@
 /* start font */
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 /* End font */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600;);
 
 /* start body */
 body {
@@ -152,12 +153,25 @@ h6 {
     height: 140px;
 }
 
+.main-one {
+    float: left;
+    overflow: auto;
+    width: 70%;
+}
+
 /* End Main */
+/* start sidebar */
+.sidebar-two {
+    float: right;
+    overflow: auto;
+    width: 29%;
+}
+/* End sidebar */
 
 /* start box */
 .box-heading {
-    background-color: papayawhip; 
-    border: 1px solid #d1d5da;
+    background-color: whitesmoke; 
+    border: 2px solid burlywood;
     border-radius: 3px 3px 0 0;
     margin: 0;
     padding: 10px 20px;
@@ -167,11 +181,186 @@ h6 {
 
 }
 .box-isi {
-    background-color: ivory;
-    border: 1px solid #d1d5da;
+    background-color: rosybrown;
+    border: 1px solid plum;
     border-top: 0;
     margin: 0;
     padding: 10px 20px;
     
 }
 /* End box */
+
+/* start layanan */
+.layanan-table {
+    border: 1px solid papayawhip;
+    border-collapse: collapse;
+    margin: auto;
+    width: 100%;
+}
+.layanan-table th {
+    background-color: wheat;
+}
+.layanan-table td {
+    text-align: center;
+}
+/* End layanan */
+
+/* start form */
+input[type="text"],
+input[type="email"] 
+textarea {
+    font-size: 14px;
+    padding: 10px;
+}
+input:: placeholder,
+textarea:: placeholder {
+    color: gray;
+    font-weight: 300;
+    
+}
+
+input[type="submit"], {
+    background-color: white;
+    background-image: linear-gradient(-180deg, #fafbfc #eff3f6 90%);
+    border: 1px solid rgba(27, 31, 35, 0.2);
+    border-radius: 4px;
+    color: gray;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 5px 10px;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+/* End form */
+
+/* start form contact */
+.contact-form div {
+    margin: 20px 0;
+}
+/* End form contact */
+
+/* start testimoni */
+.testimoni {
+    border-left:4px solid burlywood;
+    margin-left: 20px;
+    padding: 10px;
+}
+/* End testinomi */
+/* Strat menu sekunder */
+.menu-sekunder {
+    background-color: pink;
+    border-bottom: 2px solid brown;
+    border-top: 2px solid brown;
+    overflow: auto; 
+    padding: 10px 0;
+}
+.menu-sekunder h4 {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0 auto;
+
+}
+.menu-sekunder ul {
+    padding: 0;
+}
+.menu-sekunder li {
+    list-style: disc;
+}
+.menu-sekunder li a
+.menu-sekunder p {
+    font-size: 12px;
+}
+.menu-sekunder-one,
+.menu-sekunder-two,
+.menu-sekunder-three {
+    float: left;
+} 
+.menu-sekunder-one {
+    width: 40%;
+}
+.menu-sekunder-two,
+.menu-sekunder-three {
+    width: 30%;
+}
+.menu-sekunder li img {
+    vertical-align: middle;
+}
+/* End menu sekunder */
+
+/* start copyright */
+.copyright p{
+    font-size: 15px;
+}
+/* End copyright */
+
+/* start snip */
+.snip1571 {
+    background-color: #000;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin: 10px;
+    max-width: 23%;
+    min-width: 23%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+  .snip1571 *,
+  .snip1571 *:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  .snip1571 img {
+    backface-visibility: hidden;
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .snip1571 figcaption {
+    bottom: 30px;
+    left: 0;
+    position: absolute;
+    z-index: 0;
+  }
+  .snip1571 figcaption:before {
+    background-color: #ffffff;
+    bottom: -5px;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 100%;
+    top: -5px;
+    z-index: -1;
+  }
+  .snip1571 h3 {
+    background-color: #c73232;
+    color: #ffffff;
+    font-size: 0.9em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    z-index: 1;
+  }
+  .snip1571 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  .snip1571:hover > img,
+  .snip1571.hover > img {
+    opacity: 0.1;
+  }
+  .snip1571:hover figcaption:before,
+  .snip1571.hover figcaption:before {
+    right: -5px;
+  }
+/* End snip */
