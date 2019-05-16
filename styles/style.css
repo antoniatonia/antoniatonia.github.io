@@ -172,10 +172,12 @@ h6 {
 .box-heading {
     background-color: whitesmoke; 
     border: 2px solid burlywood;
-    border-radius: 3px 3px 0 0;
+    border-radius: 8px 8px 8px 8px;
     margin: 0;
     padding: 10px 20px;
     text-transform: uppercase;
+    line-height: 0em;
+
 }
 .box-heading h4 {
 
@@ -186,7 +188,8 @@ h6 {
     border-top: 0;
     margin: 0;
     padding: 10px 20px;
-    
+    border-radius: 8px 8px 8px 8px;
+    line-height: 1.5em;
 }
 /* End box */
 
@@ -291,6 +294,7 @@ input[type="submit"], {
 /* start copyright */
 .copyright p{
     font-size: 15px;
+    text-align: center;
 }
 /* End copyright */
 
