@@ -58,6 +58,53 @@
     </div>
     <!-- End jumbotrom -->
 
+    <!-- Start slider -->
+    <div class="slideshow-container container">
+
+        <div class="mySlides fade">
+            <img src="images/new/a.jpg" style="width:100%" height="500px">
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/new/b.jpg" style="width:100%" height="500px">
+            <div class="text"></div>
+        </div>
+        <div class="mySlides fade">
+            <img src="images/new/e.jpg" style="width:100%" height="500px">
+            <div class="text"></div>
+        </div>
+
+    </div>
+    <br>
+    <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div>
+     <script>
+            var slideIndex = 0;
+            showSlides();
+            function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+            }
+
+            slideIndex++;
+            if (slideIndex> slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 5000); // Change image every 2 seconds
+            }
+        </script>
+    <!-- End slider -->
+    <hr class="container">
     <!-- start snip -->
     <div class="container">
         <figure class="snip1571">
@@ -190,27 +237,31 @@
             <!-- End MUA-OFFICIAL -->
             
 
-            <!-- start Menu -->
-            <div class="menu-sekunder-two">
+             <!-- start Menu -->
+             <div class="menu-sekunder-two">
                 <h4>Menu</h4>
                 <ul>
-                   <br> 
-                    index
-                    <br>
-                    foto
-                    <br>
-                    pembayaran
-                    <br>
-                    layanan
-                    <br>
-                    pertanyaan
-                    <br>
-                    artikel
-                    <br>
-                    testimoni
-                    <br>
-                    kontak
-                    
+                    <li>
+                        <a href="index.html" title="Beranda">Beranda</a>
+                    </li>
+                    <li>
+                        <a href="foto.html" title="Foto">Foto</a>
+                    </li>
+                    <li>
+                        <a href="layanan.html" title="layanan">Pekerjaan</a>
+                    </li>
+                    <li>
+                        <a href="pertanyaan.html" title="Pertanyaan">Pertanyaan</a>
+                    </li>
+                    <li>
+                        <a href="artikel.html" title="Artikel">Artikel</a>
+                    </li>
+                    <li>
+                        <a href="testimoni.html" title="Testimoni">Testimoni</a>
+                    </li>
+                    <li>
+                        <a href="kontak.html" title="kontak kami">kontak kami</a>
+                    </li>
                 </ul>
             </div>
             <!-- End Menu -->
