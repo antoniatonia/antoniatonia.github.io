@@ -11,6 +11,7 @@ body {
     line-height: 1.5em;
     margin: 0;
     padding: 0;
+    background-color: whitesmoke;
 }
 /* End body */
 
@@ -36,6 +37,194 @@ body {
     overflow: auto;
     width: 90%;
 }
+/* start slider */
+.mySlides img {
+    object-fit: cover;
+}
+/* Yang membuatnya jadi slider */
+ul.slide li {
+    display: inline-block;
+    float: left;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    ox-sizing:border-box;
+    -webkit-transition: -webkit-transform 2000ms;
+    -moz-transition: -moz-transform 2000ms;
+    transition: -webkit-transform 2000ms, transform 2000ms;
+ }
+ ul.slide li.slide-1 {
+  left: 0%;
+ }
+ ul.slide li.slide-2 {
+  left: 100%;
+ }
+ ul.slide li.slide-3 {
+  left: 200%;
+ }
+ #nav-1:checked ~ ul.slide li{
+    -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+    transform: translateX(0%);
+ }
+ #nav-2:checked ~ ul.slide li{
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+   transform: translateX(-100%);
+ }
+ #nav-3:checked ~ ul.slide li {
+    -webkit-transform: translateX(-200%);
+    -moz-transform: translateX(-200%);
+    transform: translateX(-200%);
+ }
+/* End, yang membuatnya jadi slider */
+
+
+/* Navigator */
+
+.radio-nav { /* menghilangkan radio button */
+ display: none;
+}
+ 
+ /* styling untuk tombol next dan previous slide */
+ .nav-arrow {
+  position: absolute;
+  top:45%;
+  width:50px;
+  height: 50px;
+ }
+ .nav-next {
+  right:10px;
+ }
+ .nav-prev {
+  left:10px;
+ }
+ .nav-arrow label {
+  -webkit-transition:all 0.3s;
+  -moz-transition:all 0.3s;
+  transition:all 0.3s;
+  background-color: rgba(0,0,0,0.3);
+  color: #fff;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  padding:15px 20px;
+  cursor: pointer;
+  z-index: 1;
+  opacity: 0;
+  font-weight: bold;
+  line-height: 1;
+ }
+ .container:hover .nav-arrow label{
+  background-color: rgba(0,0,0,0.7);
+ }
+ /* end styling untuk tombol next dan previous slide */
+ /*Setiap slide mempunya tombol prev dan next-nya masing-masing. Nah, tampilkan tombol yang tepat dengan kode dibawah ini*/ 
+ #nav-1:checked ~ .nav-prev label.nav-3,
+ #nav-1:checked ~ .nav-next label.nav-2,
+ #nav-2:checked ~ .nav-prev label.nav-1,
+ #nav-2:checked ~ .nav-next label.nav-3,
+ #nav-3:checked ~ .nav-prev label.nav-2,
+ #nav-3:checked ~ .nav-next label.nav-1 {
+  z-index: 2;
+  opacity: 1;
+ }
+ /* end */
+
+/* Navigator */
+	
+/* form */
+.form-style-3{
+	max-width: 450px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.form-style-3 label{
+	display:block;
+	margin-bottom: 10px;
+}
+.form-style-3 label > span{
+	float: left;
+	width: 100px;
+	color: #F072A9;
+	font-weight: bold;
+	font-size: 13px;
+	text-shadow: 1px 1px 1px #fff;
+}
+.form-style-3 fieldset{
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	margin: 0px 0px 10px 0px;
+	border: 1px solid #FFD2D2;
+	padding: 20px;
+	background: #FFF4F4;
+	box-shadow: inset 0px 0px 15px #FFE5E5;
+	-moz-box-shadow: inset 0px 0px 15px #FFE5E5;
+	-webkit-box-shadow: inset 0px 0px 15px #FFE5E5;
+}
+.form-style-3 fieldset legend{
+	color: #FFA0C9;
+	border-top: 1px solid #FFD2D2;
+	border-left: 1px solid #FFD2D2;
+	border-right: 1px solid #FFD2D2;
+	border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	-moz-border-radius: 5px 5px 0px 0px;
+	background: #FFF4F4;
+	padding: 0px 8px 3px 8px;
+	box-shadow: -0px -1px 2px #F1F1F1;
+	-moz-box-shadow:-0px -1px 2px #F1F1F1;
+	-webkit-box-shadow:-0px -1px 2px #F1F1F1;
+	font-weight: normal;
+	font-size: 12px;
+}
+.form-style-3 textarea{
+	width:250px;
+	height:100px;
+}
+.form-style-3 input[type=text],
+.form-style-3 input[type=date],
+.form-style-3 input[type=datetime],
+.form-style-3 input[type=number],
+.form-style-3 input[type=search],
+.form-style-3 input[type=time],
+.form-style-3 input[type=url],
+.form-style-3 input[type=email],
+.form-style-3 select, 
+.form-style-3 textarea{
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border: 1px solid #FFC2DC;
+	outline: none;
+	color: #F072A9;
+	padding: 5px 8px 5px 8px;
+	box-shadow: inset 1px 1px 4px #FFD5E7;
+	-moz-box-shadow: inset 1px 1px 4px #FFD5E7;
+	-webkit-box-shadow: inset 1px 1px 4px #FFD5E7;
+	background: #FFEFF6;
+	width:50%;
+
+}
+.form-style-3  input[type=submit],
+.form-style-3  input[type=button]{
+	background: #EB3B88;
+	border: 1px solid #C94A81;
+	padding: 5px 15px 5px 15px;
+	color: #FFCBE2;
+	box-shadow: inset -1px -1px 3px #FF62A7;
+	-moz-box-shadow: inset -1px -1px 3px #FF62A7;
+	-webkit-box-shadow: inset -1px -1px 3px #FF62A7;
+	border-radius: 3px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;	
+	font-weight: bold;
+}
+.form-style-3 .required{
+	color:red;
+	font-weight:normal;
+}
+/* End slider */
 
 /* start logo */
 .logo {
@@ -58,12 +247,13 @@ a:active {
 
 /* start Menu primer */
 .menu-primer ul {
-    background-color: rosybrown;;
+    background-color: peru;
     border-radius: 4px;
     box-shadow: 
-    0 30px 5px -1px rgba(0, 0, 0, .2),
-    0 6px 10px 0px rgba(0, 0, 0, .14),
+    0 3px 5px -1px rgba(0, 0, 0, .2),
+    0 6px 10px 0px rgba(228, 199,189, 14),
     0 1px 18px 0px rgba(0, 0, 0, .12);  
+    text-align: center;
 }
 
 .menu-primer li {
@@ -80,10 +270,11 @@ a:active {
     letter-spacing: 1px;
     display: inline-block;
     margin: 0 -4px;
+
 }
 
 .menu-primer a:hover {
-    background-color: antiquewhite;
+    background-color: papayawhip;
     color: #333333;
     text-decoration: none;
 }
@@ -124,10 +315,11 @@ h6 {
 
 /* start jumbobron */
 .jumbotron {
-    background-color: rosybrown;
+    background-color: papayawhip;
     border: 1px solid brown;
     border-radius: 4px;
     padding: 20px 0; 
+    
 }
 .jumbotron h1 {
     font-size: 32px;
@@ -170,20 +362,18 @@ h6 {
 
 /* start box */
 .box-heading {
-    background-color: whitesmoke; 
+    background-color: papayawhip; 
     border: 2px solid burlywood;
     border-radius: 8px 8px 8px 8px;
     margin: 0;
     padding: 10px 20px;
     text-transform: uppercase;
     line-height: 0em;
-
+    text-align: center;
 }
-.box-heading h4 {
 
-}
 .box-isi {
-    background-color: rosybrown;
+    background-color: aliceblue;
     border: 1px solid plum;
     border-top: 0;
     margin: 0;
@@ -201,7 +391,7 @@ h6 {
     width: 100%;
 }
 .layanan-table th {
-    background-color: wheat;
+    background-color: papayawhip;
 }
 .layanan-table td {
     text-align: center;
@@ -215,14 +405,14 @@ textarea {
     font-size: 14px;
     padding: 10px;
 }
-input:: placeholder,
-textarea:: placeholder {
+input::placeholder,
+textarea::placeholder {
     color: gray;
     font-weight: 300;
     
 }
 
-input[type="submit"], {
+input[type="submit"] {
     background-color: white;
     background-image: linear-gradient(-180deg, #fafbfc #eff3f6 90%);
     border: 1px solid rgba(27, 31, 35, 0.2);
