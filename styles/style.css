@@ -3,6 +3,7 @@
 /* End font */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600;);
 
+
 /* start body */
 body {
     color: black;
@@ -11,7 +12,7 @@ body {
     line-height: 1.5em;
     margin: 0;
     padding: 0;
-    background-color: whitesmoke;
+    background-color: black;
 }
 /* End body */
 
@@ -45,9 +46,9 @@ body {
 ul.slide li {
     display: inline-block;
     float: left;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    ox-sizing:border-box;
+    -webkit-boxsizing: border-box;
+    -moz-boxsizing: border-box;
+    -moz-boxsizing: border-box;
     -webkit-transition: -webkit-transform 2000ms;
     -moz-transition: -moz-transform 2000ms;
     transition: -webkit-transform 2000ms, transform 2000ms;
@@ -232,6 +233,12 @@ ul.slide li {
 }
 /* End logo */
 
+/* start color */
+.color {
+    color: white;
+    text-align: center;
+}
+/* End color */
 /* start Anchor / hyperlink */
 a:link,
 a:visited {
@@ -247,7 +254,7 @@ a:active {
 
 /* start Menu primer */
 .menu-primer ul {
-    background-color: peru;
+    background-color: wheat;
     border-radius: 4px;
     box-shadow: 
     0 3px 5px -1px rgba(0, 0, 0, .2),
@@ -263,7 +270,7 @@ a:active {
 }
 
 .menu-primer a {
-    color: #ffffff;
+    color: black;
     font-size: 13px;
     padding: 10px 20px;
     text-transform: uppercase; 
@@ -280,8 +287,8 @@ a:active {
 }
 
 .menu-primer .active {
-    background-color: blanchedalmond;
-    color: #333333;
+    background-color: aliceblue;
+    color: black;
     text-decoration: none;
 }
 /* End Menu primer */
@@ -330,6 +337,12 @@ h6 {
     padding: 0 20px;
 }
 /* End jumbotron */
+
+/* start video */
+.video {
+    text-align: center;
+}
+/* End video */
 
 /* start main */
 .main-home-one {
@@ -442,9 +455,9 @@ input[type="submit"] {
 /* End testinomi */
 /* Strat menu sekunder */
 .menu-sekunder {
-    background-color: pink;
-    border-bottom: 2px solid brown;
-    border-top: 2px solid brown;
+    background-color: papayawhip;
+    border-bottom: 2px solid burlywood;
+    border-top: 2px solid burlywood;
     overflow: auto; 
     padding: 10px 0;
 }
